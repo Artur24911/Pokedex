@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/generated-image.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+    <link rel="stylesheet" href="./assets/styles/standard.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <img src="./assets/icons/generated-image.png" alt="Pokedex">
+        <div class="search-container">
+            <input type="text" data-id="search-input" placeholder="Search Pokemon" aria-label="Search Pokemon by name"
+                oninput="onSearchInput()" onkeydown="onSearchKey(event)">
+            <button data-id="search-button" aria-label="Start search" onclick="searchPokemon()" disabled>Search</button>
+        </div>
+    </header>
+    <main data-id="content">
+         <ul class="pokemon-list" data-id="pokemon-list" aria-label="Pokemon list"></ul>
+        <div class="loading" data-id="loading" role="status" hidden>Loading…</div>
+        <button class="load-more" data-id="load-more-button" aria-label="Load more Pokemon"
+            onclick="loadMore()">Load more</button>
+    </main>
+    <dialog data-id="dialog" aria-label="Pokemon details"></dialog>
+    <footer>
+
+    </footer>
+     <script src="script.js"></script>
+    <script src="./assets/scripts/template.js"></script>
+</body>
+
+
+</html>
