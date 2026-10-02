@@ -13,9 +13,8 @@ ul {
 }
 
 h2 {
-    font-size: 28px;
-    font-weight: bolder;
-    font-family: 'Luckiest Guy', cursive;
+    font-size: 32px;
+    font-family: 'Luckiest Guy';
 }
 
 button:hover {
